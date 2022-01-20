@@ -3,51 +3,41 @@
 }
 
 html,body{
-    background-color:rebeccapurple;
+    background-color:darkslategray;
+    color: white;
 }
 
-.box {
-    color:green;
+ul>li:nth-child(3),ul>li:nth-child(4){
+    color:red;
+}
+
+ol>li:nth-child(even){
+    font-size:24px;
 }
 
 div{
-    width:500px;
-    height:300px;
-    background-color:aqua;
-}
-div > div{
-    width:50px;
-    height:50px;
+    width:100px;
+    height:100px;
     background-color:red;
-    margin-bottom:50px;
+    color:black;
 }
-
-div>div>div{
-    background-color:yellow;
-    height:20px;
-    width:20px;
-}
-
-div>div:nth-child(even){
-    background-color:green;
-}
-.button{
-    background-color:blue;
-    height:40px;
-    width:80px;
-    border:1px solid white;
-    box-sizing: border-box;
-    cursor:pointer;
+body>:nth-child(5){
     color:white;
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
-.button:hover{
-    background-color:#0101db;
-    border-width:3px;
+
+div>p:nth-child(1){
+    font-style:italic;
+    color:black;
 }
-.button:active{
-    background-color: #000093;
-    border-width:1px;
+
+button{
+    border-radius:10px;
+}
+button:hover{
+    background-color:blue;
+}
+button:active{
+    width:200px;
+    height:150px;
+    border-radius:0px;
 }
